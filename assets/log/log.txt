@@ -1,0 +1,45 @@
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Fri, 03 Aug 2018 06:32:13 +0200
+
+Json_manager > url_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Fri, 03 Aug 2018 06:32:17 +0200
+
+Json_manager > get_code(): 
+Ran: 7 time(s)
+Elapsed time: 0.0000s
+Fri, 03 Aug 2018 06:32:17 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Fri, 03 Aug 2018 06:39:28 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Sat, 04 Aug 2018 05:37:02 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Sat, 04 Aug 2018 05:37:12 +0200
+
+Json_manager > get_url(): 
+Ran: 9 time(s)
+Elapsed time: 0.0000s
+Sat, 04 Aug 2018 05:37:12 +0200
+
+Json_manager > url_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Sat, 04 Aug 2018 05:38:31 +0200
+
+Json_manager > get_code(): 
+Ran: 9 time(s)
+Elapsed time: 0.0000s
+Sat, 04 Aug 2018 05:38:31 +0200
+
