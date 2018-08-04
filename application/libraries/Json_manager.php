@@ -33,7 +33,7 @@ class Json_manager {
         $this->CI->benchmark->mark('end');
         $this->CI->logger->write_to_log("Json_manager > get_url(): \nRan: ".$count." time(s)\nElapsed time: ".$this->CI->benchmark->elapsed_time('start','end')."s");
 
-        return $value->url;
+        return urldecode($value->url);
       }
     }
     return FALSE;
@@ -45,7 +45,7 @@ class Json_manager {
   public function save($url,$code)
   {
     $new = new stdClass();
-    $new->url = $url;
+    $new->url = urlencode($url);
     $new->code = $code;
     $this->links[$this->get_links_count()] = $new;
     $bool = file_put_contents($this->file, json_encode($this->links));
@@ -57,6 +57,8 @@ class Json_manager {
   */
   public function url_exists($url)
   {
+    $url = urlencode($url);
+
     $this->CI->benchmark->mark('start');
     $count = 0;
 
@@ -118,6 +120,8 @@ class Json_manager {
   */
   public function get_code($url)
   {
+    $url = urlencode($url);
+
     $this->CI->benchmark->mark('start');
     $count = 0;
 
@@ -141,7 +145,7 @@ class Json_manager {
   public function is_short($url)
   {
     // e.g. "/kazam\.xyz/i"
-    return preg_match("/localhost:1234\/ci\/link_shortener/i",$url)?true:false;
+    return preg_match("/ileri\.pw/i",$url)?true:false;
   }
 
   /* 
