@@ -95,7 +95,6 @@
 			});
 
 			$(app.butt).click(function(){
-
 				app.Go(app.input);
 			});
 
@@ -123,6 +122,7 @@
 							app.url.html(data);
 							app.url.attr('href', data);
 							app.urlmsg.show();
+              app.input.val(data).select();
 						}
 					}
 				});
