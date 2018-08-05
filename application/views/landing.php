@@ -38,12 +38,13 @@
   </head>
   <body>
 
-    <div class="text-center">
-      <div class="jumbotron">
+    <div class="jumbotron text-center">
+      <div class="container-fluid">
         <h2>The personal link shortener of</h2>
         <p><a href="http://ilerioyedele.com">Ileri</a></p>
       </div>
-
+    </div>
+    <div class="container-fluid text-center">
       <div class="row" id="err_msg_div" style="display: none">
         <div class="col-md-12">
           <div class="alert alert-danger" id="msg">
