@@ -38,8 +38,8 @@
   </head>
   <body>
 
-    <div class="container-fluid text-center">
-      <div class="jumbotron" style="margin-top: 5px;">
+    <div class="text-center">
+      <div class="jumbotron">
         <h2>The personal link shortener of</h2>
         <p><a href="http://ilerioyedele.com">Ileri</a></p>
       </div>
