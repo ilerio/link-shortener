@@ -47,7 +47,7 @@ class Json_manager {
     $new = new stdClass();
     $new->url = urlencode($url);
     $new->code = $code;
-    $this->links[$this->get_links_count()] = $new;
+    $this->links->{$this->get_links_count()} = $new;
     $bool = file_put_contents($this->file, json_encode($this->links));
     return (bool)$bool;
   }
@@ -146,6 +146,65 @@ class Json_manager {
   {
     // e.g. "/kazam\.xyz/i"
     return preg_match("/ileri\.pw/i",$url)?true:false;
+  }
+
+  /* 
+  Returns all links and codes as a JSON object
+  */
+  public function get_all()
+  {
+    return $this->links;
+  }
+
+  /* 
+  Returns the username
+  */
+  public function get_username()
+  {
+    $file = set_realpath('assets/json/user.json');
+    $user = json_decode(file_get_contents($file));
+    return $user[0]->username;
+  }
+
+  /* 
+  Returns the password
+  */
+  public function get_hash()
+  {
+    $file = set_realpath('assets/json/user.json');
+    $user = json_decode(file_get_contents($file));
+    return $user[0]->hash;
+  }
+
+  /* 
+  Deletes the given link and code
+  */
+  public function delete($num)
+  {
+    unset($this->links->{$num});
+    $bool = file_put_contents($this->file, json_encode($this->links));
+    return $bool;
+  }
+
+  /* 
+  Updates the given link and code
+  */
+  public function update_2($url, $code, $id)
+  {
+    $this->links->{$id}->url = urlencode($url);
+    $this->links->{$id}->code = $code;
+    $bool = file_put_contents($this->file, json_encode($this->links));
+    return $bool;
+  }
+
+  /* 
+  Updates the given link
+  */
+  public function update_1($url, $id)
+  {
+    $this->links->{$id}->url = urlencode($url);
+    $bool = file_put_contents($this->file, json_encode($this->links));
+    return $bool;
   }
 
   /* 

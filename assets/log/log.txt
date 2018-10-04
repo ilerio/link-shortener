@@ -43,3 +43,133 @@ Ran: 9 time(s)
 Elapsed time: 0.0000s
 Sat, 04 Aug 2018 05:38:31 +0200
 
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 26 Sep 2018 03:17:02 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Thu, 27 Sep 2018 07:09:08 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 02:10:00 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 02:10:18 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 05:11:50 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 05:14:01 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 05:15:20 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 06:39:44 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 06:40:20 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 06:43:11 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 06:45:26 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 06:47:13 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 06:48:46 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 07:05:05 +0200
+
+Json_manager > gen_code(): 
+Ran: 1 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 07:05:34 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 07:07:28 +0200
+
+Json_manager > url_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Wed, 03 Oct 2018 07:07:47 +0200
+
+Json_manager > url_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:00:12 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:14:45 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:16:25 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:16:47 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:17:00 +0200
+
+Json_manager > url_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:22:05 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:22:05 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:35:23 +0200
+
+Json_manager > code_exists(): 
+Ran: 0 time(s)
+Elapsed time: 0.0000s
+Thu, 04 Oct 2018 06:35:50 +0200
+

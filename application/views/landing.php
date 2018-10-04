@@ -26,6 +26,10 @@
         /* Margin bottom by footer height */
         margin-bottom: 60px;
       }
+      .login {
+        text-decoration: none;
+        color: #456472;
+      }
       .footer {
         position: absolute;
         bottom: 0;
@@ -73,7 +77,7 @@
     <footer class="footer">
       <div class="container">
         <br/>
-        ileri.pw &copy; <?php echo date('Y'); ?>
+        <a class="login" href="/login">i</a>leri.pw &copy; <?php echo date('Y'); ?>
       </div>
     </footer>
 
@@ -101,7 +105,7 @@
 
 			app.Go = function (obj) {
 				$.ajax({
-					url: 'null',
+					url: 'save',
 					type: 'post',
 					data: {url: $(obj).val()},
 					success: function(data) {
