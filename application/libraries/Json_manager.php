@@ -47,7 +47,10 @@ class Json_manager {
     $new = new stdClass();
     $new->url = urlencode($url);
     $new->code = $code;
-    $this->links->{$this->get_links_count()} = $new;
+    do {
+      $id = $this->gen_id();
+    } while ($this->id_exists($id));
+    $this->links->{$id} = $new;
     $bool = file_put_contents($this->file, json_encode($this->links));
     return (bool)$bool;
   }
@@ -76,6 +79,28 @@ class Json_manager {
   }
 
   /* 
+  Checks if id already exists in the json file
+  */
+  public function id_exists($id)
+  {
+    $this->CI->benchmark->mark('start');
+    $count = 0;
+
+    foreach ($this->links as $key => $value)
+    {
+      $count++;
+      if ($id == $key)
+      {
+        $this->CI->benchmark->mark('end');
+        $this->CI->logger->write_to_log("Json_manager > id_exists(): \nRan: ".$count." time(s)\nElapsed time: ".$this->CI->benchmark->elapsed_time('start','end')."s");
+
+        return TRUE;
+      }
+    }
+    return FALSE;
+  }
+
+  /* 
   Checks if code already exists in the json file
   */
   public function code_exists($code)
@@ -94,6 +119,25 @@ class Json_manager {
       }
     }
     return FALSE;
+  }
+
+  /* 
+  Generate and return a randomly generated id
+  */
+  public function gen_id()
+  {
+    $this->CI->benchmark->mark('start');
+
+    $count = 0;
+    do {
+      $id = hexdec(bin2hex(openssl_random_pseudo_bytes(2)));
+      $count++;
+    } while ($this->id_exists($id));
+
+    $this->CI->benchmark->mark('end');
+    $this->CI->logger->write_to_log("Json_manager > gen_id(): \nRan: ".$count." time(s)\nElapsed time: ".$this->CI->benchmark->elapsed_time('start','end')."s");
+
+    return $id;
   }
 
   /* 
